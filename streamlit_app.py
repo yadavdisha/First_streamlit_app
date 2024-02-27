@@ -7,5 +7,6 @@ streamlit.text('🥣Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑Avacado Toast')
 fruit_list=pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.multiselect("Pick some food:" list(fruit_list.index))
 streamlit.dataframe(fruit_list)
    
